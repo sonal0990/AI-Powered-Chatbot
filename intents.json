@@ -1,0 +1,52 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good afternoon", "hi there", "hello bot", "greetings"],
+      "responses": ["Hello! How can I assist you today?", "Hi there! What can I help you with?", "Greetings! How may I help you?"],
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you later", "thanks, bye", "I'm done", "farewell"],
+      "responses": ["Goodbye! Have a great day!", "See you next time!", "Farewell!", "It was a pleasure assisting you."],
+      "context_set": ""
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thank you", "thanks", "appreciate it", "that helps a lot", "cheers"],
+      "responses": ["You're welcome!", "Glad I could help!", "Anytime!", "My pleasure."],
+      "context_set": ""
+    },
+    {
+      "tag": "product_info",
+      "patterns": ["tell me about your products", "what do you sell", "product catalog", "list products", "what kind of products do you have"],
+      "responses": ["We offer a range of products including smart devices, home appliances, and accessories. What are you interested in?", "Our main product lines are smart home tech and personal gadgets."],
+      "context_set": "product_query"
+    },
+    {
+      "tag": "warranty_query",
+      "patterns": ["warranty information", "how long is the warranty", "product guarantee", "warranty period", "what's the warranty on this"],
+      "responses": ["Our standard warranty period is 1 year from the date of purchase.", "Most products come with a 12-month warranty."],
+      "context_set": ""
+    },
+    {
+      "tag": "shipping_info",
+      "patterns": ["shipping costs", "delivery time", "how long for delivery", "shipping options", "when will my order arrive", "what are the shipping fees"],
+      "responses": ["Standard shipping usually takes 3-5 business days. Express options are available at checkout.", "Shipping costs vary by location and speed. Please check our shipping policy page for details."],
+      "context_set": ""
+    },
+    {
+      "tag": "return_policy",
+      "patterns": ["return policy", "can I return an item", "how to return", "what is your return process"],
+      "responses": ["Our return policy allows returns within 30 days of purchase, provided the item is in original condition. Please visit our returns page for instructions.", "You can return items within 30 days. Contact support for a return authorization number."],
+      "context_set": ""
+    },
+    {
+      "tag": "contact_support",
+      "patterns": ["contact support", "talk to a human", "customer service number", "need help", "can I speak to someone", "get in touch with support"],
+      "responses": ["You can reach our customer support at 1-800-CHATBOT-HELP or via email at support@example.com.", "Please call us at our toll-free number or use the live chat feature on our website during business hours."],
+      "context_set": ""
+    }
+  ]
+}
